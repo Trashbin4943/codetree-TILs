@@ -1,10 +1,12 @@
 n=int(input())
 num=list(map(int,input().split()))
-a=0
+
 for i in (num):
-    if num.count(i)==2:
+    if num.count(i)>=2:
         while i in num:
             num.remove(i)
+    else:
+        break
 
 if num==[]:
     print(-1)
