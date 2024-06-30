@@ -22,7 +22,9 @@ for k in numli[1:n]:
 
 idxx2=[]
 idxx2.append(numli.index(least2))
-if numli.count(least2)>=2:
+if least==least2:
+    print(" ")
+elif numli.count(least2)>=2:
     print(idxx2[0]+1)
 else:
     print(idxx2[0]+1)
