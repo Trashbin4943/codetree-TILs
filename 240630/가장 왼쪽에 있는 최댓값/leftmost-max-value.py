@@ -20,9 +20,8 @@ for k in numli[1:n]:
     if k>least2:
         least2=k
 
-
 idxx2=[]
-idxx2.append(numli.index(k))
+idxx2.append(numli.index(least2))
 if numli.count(least2)>=2:
     print(idxx2[0]+1)
 else:
