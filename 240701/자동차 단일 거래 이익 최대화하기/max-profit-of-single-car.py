@@ -1,15 +1,16 @@
 n=int(input())
 price=list(map(int,input().split()))
 buy=min(price)
-del price[0:price.index(buy)+1]
+n=price.index(buy)
 
-if price!=[]:
-    sell=max(price)
-else:
-    sell=buy
-margin=sell-buy
+margin=[]
+for i in price[n+1:]:
+    if i-buy>0:
+        margin.append(i-buy)
+    else:
+        pass
 
-if margin>0:
-    print(margin)
+if margin!=[]:
+    print(max(margin))
 else:
     print(0)
