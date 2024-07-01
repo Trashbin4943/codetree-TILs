@@ -19,4 +19,4 @@ for m in range (4):
 print()
 
 sumval=sum(listing[0])+sum(listing[1])
-print(sumval/8)
+print(f"{sumval/8:.1f}")
