@@ -8,15 +8,15 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if (a<b && a<c) {
+        if (a<=b && a<=c) {
             least = a;
         }
 
-        else if (b<a && b<c) {
+        else if (b<=a && b<=c) {
             least = b;
         }
 
-        else if (c<a && c<b) {
+        else if (c<=a && c<=b) {
             least = c;
         }
 
