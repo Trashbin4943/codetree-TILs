@@ -25,12 +25,15 @@ public class Main {
             p[i]=new Ppl(name,address,region);
         }
         
-        String pn=p[n-1].name;
-        String pa=p[n-1].address;
-        String pr=p[n-1].region;
-
-        System.out.println("name "+pn);
-        System.out.println("addr "+pa);
-        System.out.println("city "+pr);
+        int lastIdx=0;
+        for (int i=0; i<n; i++) {
+            if (p[i].name.compareTo(p[lastIdx].name)>0) {
+                lastIdx=i;
+            }
+        }
+        
+        System.out.println("name "+p[lastIdx].name);
+        System.out.println("addr "+p[lastIdx].address);
+        System.out.println("city "+p[lastIdx].region);
     }
 }
