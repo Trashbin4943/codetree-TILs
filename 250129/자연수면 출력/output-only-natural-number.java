@@ -6,13 +6,13 @@ public class Main {
         int num=sc.nextInt();
         int cnt=sc.nextInt();
         
-        if (num<0) {
-            System.out.print(0);
-        }
-        else{
+        if (num>0){
             for (int i=0; i<cnt; i++) {
                 System.out.print(num);
             }
+        }
+        else {
+            System.out.print(0);
         }
     }
 }
