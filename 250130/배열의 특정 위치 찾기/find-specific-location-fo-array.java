@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] a = new int[10];
+        int a[] = new int[10];
         int sum2=0;
         int sum3=0;
+        int cnt=0;
 
         for (int i=1;i<=10;i++){
             a[i-1]=sc.nextInt();
@@ -17,11 +18,13 @@ public class Main {
             }
             if (i%3==0){
                 sum3+=a[i-1];
+                cnt++;
             }
         }
 
-        double avg=((sum3/3)*100)/100.0;
-        System.out.print(sum2+" "+avg);
+        double avg3=(double)sum3/cnt;
+
+        System.out.printf("%d %.1f",sum2,avg3);
 
     }
 }
