@@ -15,14 +15,15 @@ public class Main {
 
 
         while (true){
-            if (a==0){
+            if (a<=1){
                 break;
             }
-            remn[a%b]+=1;
+            remn[a%b]++;
             a=a/b;
         }
 
         for (int i=1;i<=b;i++){
+            System.out.println("나머지가"+" "+(i-1)+" "+remn[i-1]);
             sumval+=remn[i-1]*remn[i-1];
         }
         System.out.print(sumval);
