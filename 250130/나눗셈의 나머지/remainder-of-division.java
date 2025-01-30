@@ -18,8 +18,8 @@ public class Main {
             if (a==0){
                 break;
             }
-            a=a/b;
             remn[a%b]+=1;
+            a=a/b;
         }
 
         for (int i=1;i<=b;i++){
