@@ -14,7 +14,6 @@ public class Main {
                 y++;
             }
         }
-
         System.out.println(y);
     }
 }
