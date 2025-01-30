@@ -20,7 +20,7 @@ public class Main {
             }
         }
 
-        double avg=((sum3/3)*10)/10.0;
+        double avg=((sum3/3)*100)/100.0;
         System.out.print(sum2+" "+avg);
 
     }
