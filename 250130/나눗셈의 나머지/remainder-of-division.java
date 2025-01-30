@@ -23,7 +23,6 @@ public class Main {
         }
 
         for (int i=1;i<=b;i++){
-            System.out.println("나머지가"+" "+(i-1)+" "+remn[i-1]);
             sumval+=remn[i-1]*remn[i-1];
         }
         System.out.print(sumval);
