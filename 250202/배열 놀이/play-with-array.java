@@ -29,15 +29,7 @@ public class Main {
                         break;
                     }
                 }
-
-                if (id==-1){
-                    System.out.println(id+1);
-                }
-
-                else {
-                    System.out.println(id+1);
-                }
-
+                System.out.println(id+1);
             }
 
             else if (questcode==3){
