@@ -21,7 +21,7 @@ public class Main {
 
             else if (questcode==2){
                 int b = sc.nextInt();
-                int id=0;
+                int id=-1;
 
                 for (int i=0;i<n;i++){
                     if (num[i]==b){
@@ -30,8 +30,8 @@ public class Main {
                     }
                 }
 
-                if (id==0){
-                    System.out.println(id);
+                if (id==-1){
+                    System.out.println(id+1);
                 }
 
                 else {
